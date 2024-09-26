@@ -580,9 +580,9 @@
             weakSelf.maskView.alpha = 0.f;
         weakSelf.shadeContentView.alpha = 0.f;
     } completion:^(BOOL finished) {
-        if ([self isWindowAndIsNotKeyWindow:(targetView)]) {
-            targetView.hidden = YES;
-        }
+//        if ([self isWindowAndIsNotKeyWindow:(targetView)]) {
+//            targetView.hidden = YES;
+//        }
         [weakSelf removeFromSuperview:weakSelf.shadeContentView];
         [weakSelf removeFromSuperview:weakSelf.maskView];
         if(weakSelf.hudDismissBlock)
